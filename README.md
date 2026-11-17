@@ -1,6 +1,6 @@
 # 基于 LangGraph 的多智能体桌面助手
 
-Python、LangGraph、SQLite、PySide6、DeepSeek、MaaFramework、OCR 和 Win32 构建的 Windows 桌面助手。当前公开快照为 **0.3.47-public 开发预览版**。
+Python、LangGraph、SQLite、PySide6、DeepSeek、MaaFramework、OCR 和 Win32 构建的 Windows 桌面助手，主要是借助MAA用于明日方舟的一键挂机刷活动。当前公开快照为 **0.3.47-public 开发预览版**。
 
 ## 桌宠外观
 
