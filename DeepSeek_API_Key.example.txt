@@ -1,0 +1,2 @@
+# Copy to DeepSeek_API_Key.txt, then enter your own API key locally.
+# Never commit the filled file.

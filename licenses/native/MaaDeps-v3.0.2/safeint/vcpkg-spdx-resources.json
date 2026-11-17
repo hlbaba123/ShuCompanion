@@ -1,0 +1,19 @@
+{
+  "packages": [
+{
+  "SPDXID" : "SPDXRef-resource-0",
+  "checksums" : 
+  [
+    {
+      "algorithm" : "SHA512",
+      "checksumValue" : "9f0be3f42b05ce3ea0b8208d5d5277167b129e77dc7e15174d0e3e038cb886b16a3cb63918b4f2e21ba79021f45ee6486ff9aa61d9f856828b291699c1355f61"
+    }
+  ],
+  "copyrightText" : "NOASSERTION",
+  "downloadLocation" : "git+https://github.com/dcleblanc/SafeInt@3.0.28",
+  "licenseConcluded" : "NOASSERTION",
+  "licenseDeclared" : "NOASSERTION",
+  "name" : "dcleblanc/SafeInt"
+}
+  ]
+}

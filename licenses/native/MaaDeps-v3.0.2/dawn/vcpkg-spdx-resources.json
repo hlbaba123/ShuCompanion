@@ -1,0 +1,35 @@
+{
+  "packages": [
+{
+  "SPDXID" : "SPDXRef-resource-0",
+  "checksums" : 
+  [
+    {
+      "algorithm" : "SHA512",
+      "checksumValue" : "787d0e311acd6c5242fd9675e3766b9326098860ea80536f8bf2d8aaa9f2ea4312cef9c7b9c76529b46986e8009631ac2f30355458757c55de5bfa64d1e25960"
+    }
+  ],
+  "copyrightText" : "NOASSERTION",
+  "downloadLocation" : "git+https://github.com/google/dawn@v20260817.213942",
+  "licenseConcluded" : "NOASSERTION",
+  "licenseDeclared" : "NOASSERTION",
+  "name" : "google/dawn"
+},
+{
+  "SPDXID" : "SPDXRef-resource-1",
+  "copyrightText" : "NOASSERTION",
+  "downloadLocation" : "git+https://chromium.googlesource.com/chromium/src/third_party/jinja2@c3027d884967773057bf74b957e3fea87e5df4d7",
+  "licenseConcluded" : "NOASSERTION",
+  "licenseDeclared" : "NOASSERTION",
+  "name" : "https://chromium.googlesource.com/chromium/src/third_party/jinja2"
+},
+{
+  "SPDXID" : "SPDXRef-resource-2",
+  "copyrightText" : "NOASSERTION",
+  "downloadLocation" : "git+https://chromium.googlesource.com/chromium/src/third_party/markupsafe@4256084ae14175d38a3ff7d739dca83ae49ccec6",
+  "licenseConcluded" : "NOASSERTION",
+  "licenseDeclared" : "NOASSERTION",
+  "name" : "https://chromium.googlesource.com/chromium/src/third_party/markupsafe"
+}
+  ]
+}

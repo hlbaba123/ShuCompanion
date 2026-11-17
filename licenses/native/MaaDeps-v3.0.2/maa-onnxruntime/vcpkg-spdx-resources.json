@@ -1,0 +1,19 @@
+{
+  "packages": [
+{
+  "SPDXID" : "SPDXRef-resource-0",
+  "checksums" : 
+  [
+    {
+      "algorithm" : "SHA512",
+      "checksumValue" : "9ea05f5279fc93fd243a967f3664aaabe9216f6e3ce9358ead662653984476e9cb0cb950947f31f8602541224c946a3ceac91d7c1990ffe2b8314d61361c300f"
+    }
+  ],
+  "copyrightText" : "NOASSERTION",
+  "downloadLocation" : "git+https://github.com/microsoft/onnxruntime@v1.29.0",
+  "licenseConcluded" : "NOASSERTION",
+  "licenseDeclared" : "NOASSERTION",
+  "name" : "microsoft/onnxruntime"
+}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "packages": [
+{
+  "SPDXID" : "SPDXRef-resource-0",
+  "checksums" : 
+  [
+    {
+      "algorithm" : "SHA512",
+      "checksumValue" : "54ef13eb8375dd3f1b4f30814c83fa5c994f4a73a446ceb6741d244fcffa1571b9d61fedc9c68974f65240adae14ec9b91a04575c78ab1c97442e28439ac71b5"
+    }
+  ],
+  "copyrightText" : "NOASSERTION",
+  "downloadLocation" : "git+https://github.com/KhronosGroup/SPIRV-Headers@vulkan-sdk-1.4.357.0",
+  "licenseConcluded" : "NOASSERTION",
+  "licenseDeclared" : "NOASSERTION",
+  "name" : "KhronosGroup/SPIRV-Headers"
+}
+  ]
+}

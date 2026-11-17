@@ -1,0 +1,19 @@
+{
+  "packages": [
+{
+  "SPDXID" : "SPDXRef-resource-0",
+  "checksums" : 
+  [
+    {
+      "algorithm" : "SHA512",
+      "checksumValue" : "7ef3866fe0a337771be40153dd744306fa951214329670a068a0344e909b1128fabce22676561d68bed270716e6fabda53e8bcc839184565db634b38d11bdbac"
+    }
+  ],
+  "copyrightText" : "NOASSERTION",
+  "downloadLocation" : "git+https://github.com/zeromq/cppzmq@v4.11.0",
+  "licenseConcluded" : "NOASSERTION",
+  "licenseDeclared" : "NOASSERTION",
+  "name" : "zeromq/cppzmq"
+}
+  ]
+}

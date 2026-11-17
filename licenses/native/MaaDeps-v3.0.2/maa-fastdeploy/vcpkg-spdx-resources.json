@@ -1,0 +1,19 @@
+{
+  "packages": [
+{
+  "SPDXID" : "SPDXRef-resource-0",
+  "checksums" : 
+  [
+    {
+      "algorithm" : "SHA512",
+      "checksumValue" : "ac7e93516a036538831c5088ae949c6653f670213732d274e25f414018130a18f6c77f3b1e105b13960224f3b462fe17ab14a4b6b13e310850c0dd716d24e3bc"
+    }
+  ],
+  "copyrightText" : "NOASSERTION",
+  "downloadLocation" : "git+https://github.com/MaaXYZ/FastDeploy@e11935e4595360e7038573db1a7ab08dd0e096ec",
+  "licenseConcluded" : "NOASSERTION",
+  "licenseDeclared" : "NOASSERTION",
+  "name" : "MaaXYZ/FastDeploy"
+}
+  ]
+}

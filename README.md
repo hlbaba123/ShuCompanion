@@ -1,0 +1,88 @@
+# 黍 — 基于 LangGraph 的多智能体桌面助手
+
+Python、LangGraph、SQLite、PySide6、DeepSeek、MaaFramework、OCR 和 Win32 构建的 Windows 桌面助手。当前公开快照为 **0.3.47-public 开发预览版**。
+
+## 桌宠外观
+
+公开版本仅包含「青芽 · 毛衣女款」和「青芽 · 毛衣男款」，默认女款。右键桌宠可切换；旧皮肤偏好会回到默认女款。两款均保留静置120秒后猫咪入怀、抱猫4秒的眨眼/尾尖循环和离开动画。
+
+## 功能
+
+- Leader 理解自然语言要求，协调目录、研究、MAA 执行与诊断 Agent。
+- 查询活动、章节及关卡，检索 MAA 作业，依据本地干员档案筛选主选和备选。
+- 缓存已核实资料，支持跨轮任务续接、历史查看、任务回收和恢复。
+- 通过窗口截图、OCR 和视觉后备识别操作 MAA，支持单项及多作业导入。
+- 对首页可进入的活动提供单作业导航、一次 MAA 启动、运行监控及停止路径。
+
+每次桌面输入经过任务权限和动作账本核对。查询、导入、执行是独立的交付终点，单次执行由明确请求授权。
+
+## 使用 Windows 程序
+
+从 GitHub Releases 下载 Windows ZIP，完整解压后运行 `ShuCompanion.exe`。在本地设置自己的 API Key，或填写同目录 `DeepSeek_API_Key.txt`。开启截图和输入权限后再提交桌面任务。
+
+控制管理员权限的 MAA 或游戏时，黍也需要相应权限。Windows 的管理员启动提示由使用者确认。软件只读识别与可见键鼠操作依赖可交互的桌面会话。
+
+示例要求为「查某关作业，只给代码」「查某关作业并导入 MAA，先别开始」「查某关作业，导入 MAA 后执行一次，不用理智药和源石」。
+
+## 从源码启动
+
+建议使用 Windows x64 和 Python 3.12。
+
+```powershell
+python -m venv .venv
+.venv\Scripts\python -m pip install -r requirements.txt
+Copy-Item DeepSeek_API_Key.example.txt DeepSeek_API_Key.txt
+# 编辑本地 DeepSeek_API_Key.txt，填入自己的密钥
+.venv\Scripts\python main.py
+```
+
+也可通过 `DEEPSEEK_API_KEY` 环境变量或 `--key-file` 指定本机密钥。数据默认写入 `data/`，可用 `--data-dir` 指定其他目录。需要共享资料配置时，将 `workspace-profile.example.json` 复制为本地 `workspace-profile.json` 后编辑。
+
+### MaaFramework 与语音
+
+本地 OCR 和后台输入使用固定 MaaFramework 5.15.0。源码模式可将它安装到仓库同级的 `.maafw-runtime/5.15.0`，运行如下命令。
+
+```powershell
+.venv\Scripts\python -m pip install --target ..\.maafw-runtime\5.15.0 -r requirements-maafw.txt
+```
+
+OCR 模型、资源哈希和许可证保存在 `assets/maa-framework/`。其中 `model/ocr/keys.txt` 是文字识别字典。语音合成模型与 GPU 运行环境需要单独配置。源码保留语音接口、工作进程和本地语音辅助程序。
+
+### 本机路径适配
+
+当前 GUI 适配器仍绑定开发阶段核对过的 MAA 6.22.0 版本和安装位置。MAA 程序、配置和缓存路径位于 `shu/maa_visual_native.py`、`shu/maa_queue_receipt.py`、`shu/maa_load_receipt.py`，游戏启动路径位于 `shu/battle_windows.py`。在其他机器上，需要先适配这些默认值并验证窗口和权限。此快照保留当前实现。
+
+## 验证与打包
+
+```powershell
+$env:QT_QPA_PLATFORM = 'offscreen'
+$env:PYTHONPATH = 'tests'
+.venv\Scripts\python -m unittest discover -s tests
+.venv\Scripts\python main.py --self-test
+.venv\Scripts\python -m pip install -r requirements-dev.txt
+.venv\Scripts\python tools/build_release.py --version 0.3.47-public --maafw-runtime ../.maafw-runtime/5.15.0
+```
+
+部分回放测试需要开发机保存的真实截图，公开仓库中缺少这些夹具时会跳过。源码检查支持固定样本、真实 SQLite、LangGraph 与隔离 GUI worker，具体条件见 [验证记录](docs/VALIDATION.md)。
+
+## 项目结构
+
+```text
+main.py                 桌面与验收入口
+shu/                    Agent、状态存储、UI、视觉与输入适配
+assets/                 桌宠图集、本地 OCR 模型及许可证
+tools/                  构建、离线自检与显式验收工具
+tests/                  单元、集成和故障恢复测试
+docs/                   公开架构、验证范围与隐私说明
+```
+
+## 当前状态
+
+本版已有查询、导入和导航实现。完整实机流程仍有待修复的识别与跨轮来源问题，详见验证记录。多作业整队列作战、重复刷关及旧活动/主线的自动导航留待后续开发。
+
+角色、游戏和上游依赖归属见 [第三方声明](THIRD_PARTY_NOTICES.md)。项目源码的授权由作者另行确定，仓库包含的第三方资源按各自许可证使用。
+
+
+## 发布与隐私审查
+
+运行时的数据接收者、窗口截图和本地明文存储见[隐私说明](docs/PRIVACY.md)。完整依赖版权与替换/对应源码入口见[分发说明](docs/DEPENDENCY_SOURCES.md)；[公开核查边界](docs/PUBLICATION_REVIEW.md)区分隐私结果、许可证要求与游戏协议。不要上传本机已使用的运行资料。

@@ -1,0 +1,19 @@
+{
+  "packages": [
+{
+  "SPDXID" : "SPDXRef-resource-0",
+  "checksums" : 
+  [
+    {
+      "algorithm" : "SHA512",
+      "checksumValue" : "6ec7dbd11947376cc46502cdab866e171fca7123b317887889022d22b003e4fd96d26816046e8e24b1b83fb5190ae6232cbbacfcb20fcb78200878bd73d7adc4"
+    }
+  ],
+  "copyrightText" : "NOASSERTION",
+  "downloadLocation" : "git+https://github.com/martinmoene/optional-lite@v3.6.0",
+  "licenseConcluded" : "NOASSERTION",
+  "licenseDeclared" : "NOASSERTION",
+  "name" : "martinmoene/optional-lite"
+}
+  ]
+}

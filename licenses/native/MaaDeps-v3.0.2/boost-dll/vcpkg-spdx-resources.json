@@ -1,0 +1,19 @@
+{
+  "packages": [
+{
+  "SPDXID" : "SPDXRef-resource-0",
+  "checksums" : 
+  [
+    {
+      "algorithm" : "SHA512",
+      "checksumValue" : "9aa7ecdb6357bb93b8f80abbe765135e226e4cce582cdecc50b47480057f8dc73c1b970e88ca5fc75e18cd46e38255083cee6b27b04be4fc6ed2a7660840b5e1"
+    }
+  ],
+  "copyrightText" : "NOASSERTION",
+  "downloadLocation" : "git+https://github.com/boostorg/dll@boost-1.91.0",
+  "licenseConcluded" : "NOASSERTION",
+  "licenseDeclared" : "NOASSERTION",
+  "name" : "boostorg/dll"
+}
+  ]
+}

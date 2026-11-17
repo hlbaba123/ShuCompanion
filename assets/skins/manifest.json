@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "default_skin": "sweater-female",
+  "skins": [
+    {
+      "id": "sweater-female",
+      "label": "青芽 · 毛衣女款",
+      "atlas": "sweater-female/spritesheet.png",
+      "transition_out": "sweater-female/transition-out.png",
+      "transition_in": "sweater-female/transition-in.png",
+      "idle_vignette": {
+        "enter": {
+          "file": "sweater-female/cat-enter.png",
+          "columns": 5,
+          "frames": 20,
+          "frame_ms": 100
+        },
+        "exit": {
+          "file": "sweater-female/cat-exit.png",
+          "columns": 5,
+          "frames": 10,
+          "frame_ms": 100
+        },
+        "idle_seconds": 120,
+        "hold_ms": 4000,
+        "hold": {
+          "file": "sweater-female/cat-hold.png",
+          "columns": 8,
+          "frames": 8,
+          "frame_ms": 125
+        }
+      }
+    },
+    {
+      "id": "sweater-male",
+      "label": "青芽 · 毛衣男款",
+      "atlas": "sweater-male/spritesheet.png",
+      "transition_out": "sweater-male/transition-out.png",
+      "transition_in": "sweater-male/transition-in.png",
+      "idle_vignette": {
+        "enter": {
+          "file": "sweater-male/cat-enter.png",
+          "columns": 5,
+          "frames": 20,
+          "frame_ms": 100
+        },
+        "exit": {
+          "file": "sweater-male/cat-exit.png",
+          "columns": 5,
+          "frames": 10,
+          "frame_ms": 100
+        },
+        "idle_seconds": 120,
+        "hold_ms": 4000,
+        "hold": {
+          "file": "sweater-male/cat-hold.png",
+          "columns": 8,
+          "frames": 8,
+          "frame_ms": 125
+        }
+      }
+    }
+  ],
+  "include_legacy": false
+}

@@ -1,0 +1,20 @@
+{
+  "packages": [
+{
+  "SPDXID" : "SPDXRef-resource-0",
+  "checksums" : 
+  [
+    {
+      "algorithm" : "SHA512",
+      "checksumValue" : "85c856979d77fa05b20e9fa10571f85b9be3c63fed5600e8f52cc86563513d8df11c647ae655ceab0b9940fbc7e653389713aa2aef4ba97a67bf3cfb2b6eb3d0"
+    }
+  ],
+  "copyrightText" : "NOASSERTION",
+  "downloadLocation" : "https://files.pythonhosted.org/packages/source/v/vgamepad/vgamepad-0.1.0.tar.gz",
+  "licenseConcluded" : "NOASSERTION",
+  "licenseDeclared" : "NOASSERTION",
+  "name" : "vgamepad-0.1.0.tar.gz",
+  "packageFileName" : "vgamepad-0.1.0.tar.gz"
+}
+  ]
+}

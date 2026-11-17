@@ -1,0 +1,19 @@
+{
+  "packages": [
+{
+  "SPDXID" : "SPDXRef-resource-0",
+  "checksums" : 
+  [
+    {
+      "algorithm" : "SHA512",
+      "checksumValue" : "3b9eb1c670dadc5f14e2ffedc225a8b60164853d3f9099d37d03ec4a6c2d88c6184ff16f930395b047248cd92d0034c93fb42aa73472b5dced8d8d63eace8223"
+    }
+  ],
+  "copyrightText" : "NOASSERTION",
+  "downloadLocation" : "git+https://github.com/Microsoft/GSL@v4.2.2",
+  "licenseConcluded" : "NOASSERTION",
+  "licenseDeclared" : "NOASSERTION",
+  "name" : "Microsoft/GSL"
+}
+  ]
+}
