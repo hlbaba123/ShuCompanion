@@ -1,4 +1,4 @@
-# 黍 — 基于 LangGraph 的多智能体桌面助手
+# 基于 LangGraph 的多智能体桌面助手
 
 Python、LangGraph、SQLite、PySide6、DeepSeek、MaaFramework、OCR 和 Win32 构建的 Windows 桌面助手。当前公开快照为 **0.3.47-public 开发预览版**。
 
